@@ -1,0 +1,8 @@
+Bugatti:Veyron:1490000:EUR:1001:France
+Maybach:Exelero:7800000:EUR:690:Germany
+Pagani:Huayra Tricolore:6500000:EUR:840:Italy
+Bugatti:Divo:5000000:EUR:1500:France
+Rimac:Nevera:2000000:EUR:1914:Croatia
+Lamborgini:Huracan:300000:EUR:610:Italy
+Koenigsegg:CCXR Trevita:4000000:EUR:1018:Sweden
+Audy:R8 Spyder:228000:EUR:620:Germany
