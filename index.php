@@ -75,6 +75,8 @@
                 $ps = $_GET["ps"];
                 $country = $_GET["country"];
 
+                $carsArray = [$manufacturer, $model, $price, $currency, $ps, $country];
+
                 $carExists = false;
                 $filePath = "cars.txt";
                 if(file_exists($filePath)){
@@ -84,7 +86,7 @@
                         $str = fgets($fd);
                         $cars = explode("\n", $str);
                         foreach($cars as $car){
-                            if(strpos($car, "$manufacturer:$model:$price:$currency:$ps:$country") !== false){
+                            if(strpos($car, "$carsArray[0]:$carsArray[1]:$carsArray[2]:$carsArray[3]:$carsArray[4]:$carsArray[5]") !== false){
                                 echo "<div class='info_exists'>The car exists in the file.</div>";
                                 $carExists = true;
                                 break;
@@ -94,13 +96,13 @@
                 }
 
                 if(!$carExists){
-                    writeToFile($filePath, $manufacturer, $model, $price, $currency, $ps, $country);
+                    writeToFile($filePath, $carsArray);
                 }
             }
 
-            function writeToFile($filePath, $manufacturer, $model, $price, $currency, $ps, $country){
+            function writeToFile($filePath, $cars){
                 $fd = fopen($filePath, "a+") or die("Unable to create file!");
-                $str = "$manufacturer:$model:$price:$currency:$ps:$country";
+                $str = "$cars[0]:$cars[1]:$cars[2]:$cars[3]:$cars[4]:$cars[5]";
                 fwrite($fd, $str . PHP_EOL);
                 fclose($fd);
                 echo "<div class='info'>The info of car wrote to file.</div>";
