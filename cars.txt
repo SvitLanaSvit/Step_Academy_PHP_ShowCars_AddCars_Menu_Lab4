@@ -7,3 +7,5 @@ Lamborgini:Huracan:300000:EUR:610:Italy
 Koenigsegg:CCXR Trevita:4000000:EUR:1018:Sweden
 Audy:R8 Spyder:228000:EUR:620:Germany
 Lamborgini:Aventador:417826:USD:700:Italy
+AUDI:kkkkk:1000:EUR:11111:Deutschland
+AUDI:hhhh:1111:EUR:1111:Deutschland

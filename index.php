@@ -98,6 +98,8 @@
                 if(!$carExists){
                     writeToFile($filePath, $carsArray);
                 }
+
+                echo "<script>setTimeout(()=>{location = 'index.php'}, 1000)</script>";
             }
 
             function writeToFile($filePath, $cars){
